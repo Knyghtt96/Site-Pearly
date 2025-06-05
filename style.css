@@ -1,0 +1,159 @@
+* {
+  background-color: lightpink;
+  font-family: Arial, sans-serif;
+  width: fit-content;
+  text-align: center;
+}
+
+html {
+  transform: scale(2);
+  transform-origin: top left;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  margin: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+
+#newdiv { 
+  display: block;
+  margin-bottom: 10px;
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  border: 2px solid #6c5ce7;
+  
+}
+#newdiv input { 
+  size: auto;
+  width: fit-content;
+  color: #341f97;
+  border: 2px solid #6c5ce7;
+  background-color: #9c88ff;
+}
+#newdiv1 {
+  color: white;
+  margin-left: 250px;
+  margin-top: -270px;
+  position: relative;
+  display: flex;
+  align-items: flex-end; /* aligne les bas */
+  gap: 0px; /* espace entre les boutons si tu veux */
+  padding-bottom: 30px;
+  
+}
+
+#newdiv2{
+  margin-left: 200px;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 250px;
+}
+
+#newdiv2 button, #newdiv1 button  {
+
+color: white;
+outline: none;
+border: none;
+border-radius: 100px;
+font-weight: bold;
+position: relative;
+margin-left: 10px;
+
+}
+
+
+#ValidationPlus{
+  background-color: green;
+  box-shadow: 0 6px  rgb(1, 87, 1) ;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+#ValidationPlus:hover{
+  box-shadow: 0 4px rgb(1, 87, 1) ;
+  top:2px;
+}
+#ValidationPlus:active{
+  box-shadow: 0 0px rgb(1, 87, 1) ;
+  top:6px;
+
+}
+
+#ValidationMoins {
+  background-color: rgb(155, 54, 54);
+  box-shadow:0 6px rgb(115, 3, 3) ;
+  position: absolute;
+  transform: translateX(30px);
+
+}
+#ValidationMoins:hover{
+  box-shadow: 0 4px rgb(115, 3, 3) ;
+  top:2px;
+}
+#ValidationMoins:active{
+  box-shadow: 0 0px rgb(115, 3, 3) ;
+  top:6px;
+}
+
+
+#RectifPlus, #RectifMoins {
+  background-color: rgb(193, 123, 26);
+  box-shadow:0 6px rgb(108, 71, 18) ;
+  justify-content: center;
+}
+#RectifPlus:hover,#RectifMoins:hover{
+  box-shadow: 0 4px rgb(108, 71, 18) ;
+  top:2px;
+}
+#RectifPlus:active,#RectifMoins:active{
+  box-shadow: 0 0px rgb(108, 71, 18) ;
+  top:6px;
+}
+
+#TTPlus, #TTMoins {
+  background-color: rgb(93, 93, 93);
+  box-shadow:0 6px rgb(45, 44, 44) ;
+  border: 2px solid #6c5ce7;
+}
+#TTPlus:hover,#TTMoins:hover{
+  box-shadow: 0 4px rgb(45, 44, 44) ;
+  top:2px;
+}
+#TTPlus:active,#TTMoins:active{
+  box-shadow: 0 0px rgb(45, 44, 44) ;
+  top:6px;
+}
+
+#TTMoins,#RectifMoins {
+  width: 50px;
+  height: 50px;
+  transform: translateX(-17px);
+  filter:brightness(70%)
+}
+
+
+
+
+#reset {
+  background-color: rgb(155, 54, 54);
+  box-shadow:0 6px rgb(115, 3, 3) ;
+}
+#reset:hover{
+  box-shadow: 0 4px rgb(115, 3, 3) ;
+  top:2px;
+}
+#reset:active{
+  box-shadow: 0 0px rgb(115, 3, 3) ;
+  top:6px;
+}
