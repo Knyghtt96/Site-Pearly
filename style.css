@@ -13,7 +13,7 @@ html {
 h1 {
   text-align: center;
 }
-
+/*BOUTONS */
 button {
   margin: 10px;
   font-size: 12px;
@@ -31,7 +31,7 @@ button {
   padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 50px;
-  border: 2px solid #6c5ce7;
+  /*border: 2px solid #6c5ce7;*/
   
 }
 #newdiv input { 
