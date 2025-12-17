@@ -1,5 +1,5 @@
 body = document.querySelector("body");
-
+//test
 //On Crée tous les boutons + on leur met une ID pour modifier le CSS
 let validationPlus = document.createElement("button");
 validationPlus.id = "ValidationPlus";
