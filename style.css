@@ -31,7 +31,8 @@ button {
   padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 50px;
-  /*border: 2px solid #6c5ce7;*/
+  border: 2px solid #6c5ce7;
+  background-color: #8c83d4;
   
 }
 #newdiv input { 
