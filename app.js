@@ -1,6 +1,10 @@
 body = document.querySelector("body");
-//test
-//On Crée tous les boutons + on leur met une ID pour modifier le CSS
+
+// Créer le conteneur principal
+let container = document.createElement("div");
+container.className = "container";
+
+// Créer tous les boutons
 let validationPlus = document.createElement("button");
 validationPlus.id = "ValidationPlus";
 validationPlus.textContent = "Validation +";
@@ -40,7 +44,7 @@ newdiv1.id = "newdiv1";
 let newdiv2 = document.createElement("div");
 newdiv2.id = "newdiv2";
 
-//On crée les espaces qui s'incrémentent.
+// Créer les inputs
 let validation = document.createElement("input");
 validation.id = "validation";
 validation.value = 0;
@@ -57,10 +61,7 @@ let total = document.createElement("input");
 total.id = "total";
 total.value = 0;
 
-
-
-
-
+// Fonctions
 function Incrementevalidation() {
   validation.value = parseInt(validation.value) + 1;
   validation.style.color = "green";
@@ -135,44 +136,47 @@ function RemiseAZero() {
   total.style.color = "black";
 }
 
-const texte1= document.createElement("p")
-texte1.innerText="Validations : "
-const texte2= document.createElement("p")
-texte2.innerText="Tt : "
-const texte3= document.createElement("p")
-texte3.innerText="Rectifications : "
-const texte4= document.createElement("p")
-texte4.innerText="Total : "
+// Créer les textes
+const texte1 = document.createElement("p");
+texte1.innerText = "Validations : ";
+const texte2 = document.createElement("p");
+texte2.innerText = "Tt : ";
+const texte3 = document.createElement("p");
+texte3.innerText = "Rectifications : ";
+const texte4 = document.createElement("p");
+texte4.innerText = "Total : ";
 
-newdiv.appendChild(texte1)
+// Construire newdiv
+newdiv.appendChild(texte1);
 newdiv.appendChild(validation);
-
 newdiv.appendChild(separation);
-newdiv.appendChild(texte2)
+newdiv.appendChild(texte2);
 newdiv.appendChild(tT);
 newdiv.appendChild(separation1);
-newdiv.appendChild(texte3)
+newdiv.appendChild(texte3);
 newdiv.appendChild(rectif);
 newdiv.appendChild(separation2);
-newdiv.appendChild(texte4)
+newdiv.appendChild(texte4);
 newdiv.appendChild(total);
-body.appendChild(newdiv);
 
-newdiv1.appendChild(validationMoins);
+// Construire newdiv1 (Validations)
 newdiv1.appendChild(validationPlus);
-body.appendChild(newdiv1);
+newdiv1.appendChild(validationMoins);
 
+// Construire newdiv2 (TT + Rectif) - SANS RESET
 newdiv2.appendChild(tTPlus);
 newdiv2.appendChild(tTMoins);
-
 newdiv2.appendChild(rectifPlus);
 newdiv2.appendChild(rectifMoins);
 
-newdiv2.appendChild(reset);
-body.appendChild(newdiv2);
+// Ajouter tout au conteneur
+container.appendChild(newdiv);
+container.appendChild(newdiv1);
+container.appendChild(newdiv2);
+container.appendChild(reset); // Reset ajouté directement au container
+body.appendChild(container);
 
-
-
+// Event listeners
 validationPlus.addEventListener("click", Incrementevalidation);
 validationMoins.addEventListener("click", Decrementevalidation);
 tTPlus.addEventListener("click", IncrementeTT);
@@ -180,5 +184,3 @@ tTMoins.addEventListener("click", DecrementeTT);
 rectifPlus.addEventListener("click", IncrementeRectif);
 rectifMoins.addEventListener("click", DecrementeRectif);
 reset.addEventListener("click", RemiseAZero);
-
-
